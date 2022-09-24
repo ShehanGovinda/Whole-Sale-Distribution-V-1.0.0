@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.shape.Line?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane fx:id="DashBoardForm" prefHeight="1024.0" prefWidth="1925.0" style="-fx-background-color: #3498db;" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="Controller.DashBoardFormController">
+   <children>
+      <JFXButton layoutX="22.0" layoutY="479.0" onAction="#gotoCashierLoginForm" prefHeight="65.0" prefWidth="391.0" style="-fx-background-color: blue; -fx-background-radius: 20;" text="Cashier">
+         <font>
+            <Font name="Agency FB Bold" size="30.0" />
+         </font>
+      </JFXButton>
+      <JFXButton layoutX="22.0" layoutY="389.0" onAction="#gotoAdminLoginForm" prefHeight="65.0" prefWidth="391.0" style="-fx-background-color: blue; -fx-background-radius: 20;" text="Admin">
+         <font>
+            <Font name="Agency FB Bold" size="30.0" />
+         </font>
+      </JFXButton>
+      <ImageView fitHeight="329.0" fitWidth="378.0" layoutX="21.0" layoutY="14.0">
+         <image>
+            <Image url="@../Images/MVC.png" />
+         </image>
+      </ImageView>
+      <Line endX="-15.0" endY="1024.0" layoutX="439.0" startX="-15.0" stroke="#050aff" />
+   </children>
+</AnchorPane>

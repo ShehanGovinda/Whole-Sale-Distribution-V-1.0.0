@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import com.jfoenix.controls.JFXPasswordField?>
+<?import com.jfoenix.controls.JFXTextField?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.shape.Line?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+<AnchorPane fx:id="CashierLoginForm" prefHeight="1024.0" prefWidth="1925.0" style="-fx-background-color: #3498db;" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="Controller.CashierLoginFormController">
+   <children>
+      <JFXButton fx:id="btnCashier" layoutX="22.0" layoutY="479.0" prefHeight="65.0" prefWidth="391.0" style="-fx-background-color: green; -fx-background-radius: 20;" text="Cashier">
+         <font>
+            <Font name="Agency FB Bold" size="30.0" />
+         </font>
+      </JFXButton>
+      <JFXButton layoutX="22.0" layoutY="389.0" onAction="#adminLoginForm" prefHeight="65.0" prefWidth="391.0" style="-fx-background-color: blue; -fx-background-radius: 20;" text="Admin">
+         <font>
+            <Font name="Agency FB Bold" size="30.0" />
+         </font>
+      </JFXButton>
+      <ImageView fitHeight="324.0" fitWidth="372.0" layoutX="21.0" layoutY="14.0">
+         <image>
+            <Image url="@../Images/MVC.png" />
+         </image>
+      </ImageView>
+      <Line endX="-15.0" endY="1023.0" layoutX="439.0" startX="-15.0" stroke="#050aff" />
+      <JFXTextField fx:id="txtUserName" labelFloat="true" layoutX="911.0" layoutY="389.0" prefHeight="31.0" prefWidth="461.0" promptText="User Name" />
+      <Text fill="WHITE" layoutX="1192.0" layoutY="550.0" onMouseClicked="#goToSignUpForm" strokeType="OUTSIDE" strokeWidth="0.0" text="Sign up hear!" underline="true">
+         <font>
+            <Font size="20.0" />
+         </font></Text>
+      <Text layoutX="970.0" layoutY="551.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Don't Have an account?">
+         <font>
+            <Font size="20.0" />
+         </font></Text>
+      <JFXButton fx:id="btnCashierLogIn" layoutX="957.0" layoutY="590.0" onAction="#goToPlaceCustomerOrderForm" prefHeight="89.0" prefWidth="370.0" style="-fx-background-color: blue; -fx-background-radius: 100;" text="Log In">
+         <font>
+            <Font name="AdobeDevanagari-Bold" size="48.0" />
+         </font>
+      </JFXButton>
+      <JFXPasswordField fx:id="txtPassword1" labelFloat="true" layoutX="911.0" layoutY="471.0" prefHeight="31.0" prefWidth="461.0" promptText="Password" />
+   </children>
+</AnchorPane>
